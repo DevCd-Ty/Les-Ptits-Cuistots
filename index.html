@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les P’tits Cuistots</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FFDA84; /* fond principal */
+            color: #D77600; /* texte principal */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FFC74C; /* fond header */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .gallery {
+            max-width: 900px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #FFEFD5; /* fond description */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .description span.emoji {
+            font-size: 1.2em;
+        }
+
+        .download-btn {
+            display: block;
+            width: 220px;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #D77600; /* bouton */
+            color: #FFDA84; /* texte bouton clair */
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #B45A00; /* bouton plus foncé au hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFC74C; /* fond footer */
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍔 Les P’tits Cuistots 🥗</h1>
+    </header>
+
+    <div class="gallery">
+        <img src="image1.png" alt="Capture du jeu 1">
+        <img src="image2.png" alt="Capture du jeu 2">
+        <img src="image3.png" alt="Capture du jeu 3">
+    </div>
+
+    <div class="description">
+        <p>Bienvenue dans <strong>Les P’tits Cuistots</strong> <span class="emoji">👨‍🍳!</span>  
+        Intégrez des petits personnages colorés et préparez, cuisinez et servez des plats seul ou avec vos amis !  
+        Rythme, travail d’équipe et fou rires garantis dans ce jeu aussi simple que <strong>amusant</strong>! <span class="emoji">🍔🥗</span></p>
+    </div>
+
+    <a href="Les Ptits Cuistots.zip" class="download-btn" download>⬇️ Télécharger le jeu</a>
+
+    <footer>
+        © 2025 DevCd_Ty – Tous droits réservés
+    </footer>
+
+</body>
+</html>
